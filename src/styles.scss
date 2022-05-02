@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~font-awesome/css/font-awesome.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "./app/shared/styles/app.scss";
+@import "./app/shared/styles/flags.min.css";
+@import "~primeng/resources/themes/nova-light/theme.css";
+@import "~primeng/resources/primeng.min.css";
+@import "~primeicons/primeicons.css";
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v17/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.ui-dropdown {
+  min-width: 5.5em !important;
+  border: none !important;
+}
+.ui-dropdown-panel {
+   width: 395px !important;
+   margin-top: 8px;
+}
+
+.btn {
+  border-radius: 16px;
+}
+
+.ui-inputtext {
+   background: #dcdcdc !important;
+   padding: 8px 2px !important;
+   border-radius: 16px !important;
+   -webkit-border-radius: 16px !important;
+   -moz-border-radius: 16px !important;
+   -ms-border-radius: 16px !important;
+   -o-border-radius: 16px !important;
+}
+
+.ui-dropdown-trigger {
+   background-color: #dcdcdc !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0 rgba(0,123,255,.25) !important;
+}
+
+.ui-dropdown-item {
+  border-bottom: 1px solid #ddd !important;
+}

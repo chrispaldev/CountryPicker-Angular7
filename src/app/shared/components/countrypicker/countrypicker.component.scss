@@ -1,0 +1,58 @@
+// component css goes here
+#callForm {
+  display: flex !important;
+  #dropdown {
+
+    min-width: 30px !important;
+
+
+    #display_text {
+      margin-left:0.6em;
+
+      #sign {
+        font-weight: bold;
+        vertical-align: middle;
+      }
+    }
+
+    img {
+      width:16px;
+      vertical-align: middle;
+    }
+
+    #item_label {
+      vertical-align: middle;
+      margin-left: .6em;
+    }
+  }
+
+  input[name=phoneNumber] {
+     border: none !important;
+     background-color: #f0f0f0 !important;
+     height: 37px;
+     width:  220px;
+     border-radius: 0 0 -100px -100px!important;
+     -webkit-border-radius: 0 0 -100px -100px!important;
+     -moz-border-radius: 0 0 -100px -100px!important;
+     -ms-border-radius: 0 0 -100px -100px!important;
+     -o-border-radius: 0 0 -100px -100px!important;
+
+     &:focus {
+        border: none !important;
+     }
+}
+
+  #call_button {
+    height: 37px;
+    width: 100px;
+    margin-right: 50px;
+    background-color: #74dbd2!important;
+    border-color: #74dbd2!important;
+
+    #call_text {
+      vertical-align: top;
+    }
+  }
+
+}
+

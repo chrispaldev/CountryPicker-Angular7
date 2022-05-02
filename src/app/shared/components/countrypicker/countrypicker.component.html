@@ -1,0 +1,42 @@
+<!--component html goes here -->
+<div style="margin-top:100px;">
+    <form #f="ngForm" id="callForm" (ngSubmit)="callPhoneNumber()">
+        <div class="form-group">
+            <p-dropdown id="dropdown"
+                        [options]="countries"
+                        name="selectedCountry"
+                        ngModel (onChange)="onInputChange()">
+                <ng-template let-item pTemplate="selectedItem">
+                   <span id="display_text"><small id="sign">+</small>&nbsp;{{item.value}}</span>
+                </ng-template>
+                <ng-template let-country pTemplate="item">
+                    <div class="ui-helper-clearfix" style="position:relative; height:20px;">
+                        <img src="../../../../assets/images/blank.gif" class="flag flag-{{country.alpha2Code}}" alt="{{country.label}}"/>
+                        <span id="item_label">{{country.label}}</span>
+                    </div>
+                </ng-template>
+            </p-dropdown>
+        </div>
+
+        <div class="form-group">
+            <input class="form-control"
+                   name="phoneNumber"
+                   [(ngModel)]="phoneNumber"
+                   required
+                   (onChange)="changeValue(f)"
+                   (keyup)="changeValue(f)"/>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary" [disabled]="flag === false" id="call_button">
+                <i class="material-icons">call</i>
+                <span id="call_text">
+                    Call
+                </span>
+            </button>
+        </div>
+    </form>
+</div>
+
+
+
